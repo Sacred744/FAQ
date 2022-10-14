@@ -9,13 +9,31 @@
 </head>
 <body>
     <h4 style="background-color:BLACK ;"><img src="../image/zowie.webp" width="120" height="60"> </h4>
-    <div style="margin-top:  100px"></div>
+    <h2>XL2566K 为什么进入有的游戏后刷新率会降低到240Hz</h2>
+    <p>1、LOL 在全屏幕模式下会自动切换为 240Hz <strong style="color: red;" >(游戏不支持)</strong>，
+        须调整为无边框窗口模式才可以支持 360Hz。</p>
+    <p>2、APEX/CS:GO 可以在全屏幕/无边框窗口模式下支持 360 Hz，故问题应该是发生在游戏配置或游戏本身：</p>
+    <p>请客户检查是否使用 -freq 240或-refresh 240启动项，如有使用请将代码后参数改为360或将代码删除；</p>
+<p>如未使用任何启动项，那可能是游戏本身无法正确的通过DirectX API获取到正确的配置信息，请客户重装游戏；</p>
+  <hr>
+  <p>如上述措施未能解决问题还请收集如下信息，</p>  
+  <p>1、客户使用 PC 配置/操作系统信息。</p>  
+  <p>2、若使用 NVIDIA 显卡，提供分辨率设定及 3D 页面设定的截图。</p>  
+  <img class="faqimg" src="../image/360hz.png" alt="NOT FOUND">
+  <img class="faqimg" src="../image/NVDIA3D1.png" alt="NOT FOUND">
+  <img class="faqimg" src="../image/NVDIA3D2.png" alt="NOT FOUND">
+  <p>3、游戏配置及本地配置文件</p>  
+  <p>APEX :是通过 Origin 还是 Steam 启动，是否有设置启动选项?  (如果有，设定了什么?)
+游戏内分辨率设定为何? 是否有自行修改过 APEX config 档案文件? (如果有，更改了什么?)
+    (文件位置: C:\Users\用户名称\Saved Games\Respawn\Apex\local)
+    </p>
+    <img class="faqimg" src="../image/origin1.png" alt="NOT FOUND">
+    <img class="faqimg" src="../image/apexcfg.png" alt="NOT FOUND">
+  <p>CSGO是否使用启动选项？游戏内分辨率设定为何? 是否有自行修改过 csgo config 档案文件?（config.cfg 和 video.txt）(文件位置: ..\Steam\userdata\***(9位数字)\730\local\cfg )</p>  
+  <img class="faqimg" src="../image/steam1.png" alt="NOT FOUND">
+  <img class="faqimg" src="../image/csgocfg.png" alt="NOT FOUND">
 
-    <p>AMA 0 =关闭，AMA High = 16，AMA Premium = 19。
-        AMA 30个档位，可以让用户在OFF/High/Premium以外有更多的调整选择。
-        但过强的AMA可会导致游戏画面有一些副作用，建议用户还是要依照自己实际体验以后的感受，
-        调整出自己认为最合适的设定。</p>
-    
+
     <div style="margin-top:  500px"></div>
 </body>
 </html>
